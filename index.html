@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section class="menu">
+        <button id="close-menu">&times;</button>
+        <nav>
+            <ul id="header">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header class="header">
+        <nav class="default-nav">
+            <a href="#about-me">About Me</a><a href="#qualifications">Qualifications</a><a href="#hobbies">Hobbies</a><a href="#technologies">Technologies</a><a href="#contact-me">Contact</a>
+        </nav>
+        <nav class="mobile-nav">
+            <button id="menu-button">Menu</button>
+        </nav>
+    </header>
+    <main class="container">
+        <article class="intro">
+            <img id="profile-img" src="images/myphoto.png" alt="">
+            <h1>Hi, I am Jatin Gupta</h1>
+            <p>I am <span id="dynamic-text" class="dynamic-text-color"></span></p>
+            <p class="social-links">
+                <a href="https://twitter.com/JatinGu82555632?t=-0T7pSHjVP7qDe7jhaJJ1g&s=08" target="_blank">
+                    <img src="images/twitter.png" alt="twitter logo">
+                </a>
+                <a href="https://www.linkedin.com/in/jatin-gupta-388a181b6" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin logo">
+                </a>
+                <a href="https://www.instagram.com/jatin10008?r=nametag" target="_blank">
+                    <img src="images/insta.png" alt="Instagram logo">
+                </a>
+            </p>
+        </article>
+
+        <section id="about-me">
+            <h2>About me</h2>
+            <p>A Btech pursuing student.Diligent Computer Science Student
+                with proficiency in C++, Java and
+                Data Structures, along with excellent
+                creativity and skilled at quickly
+                solving problems and effectively
+                communicating with others.</p>
+
+        </section>
+        <section id="qualifications">
+            <h2>Qualifications</h2>
+            <ol>
+                <li>Btech CSE 3rd Year</li>
+            </ol>
+        </section>
+        <section id="hobbies"> 
+            <h2>Hobbies</h2>
+            <ul>
+                <li>GYM</li>
+                <li>Playinng video Games</li>
+                <li>Exploring new things</li>
+            </ul>
+        </section>
+        <section id="technologies">
+            <h2>Technologies</h2>
+            <section class="container">
+                <section class="card">
+                    <header>
+                        <h1>Frontend</h1>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </header>
+                </section>
+                <section class="card">
+                    <header>
+                        <h1>Backend</h1>
+                        <ul>
+                            <li>NodeJs</li>
+                            <li>Railise</li>
+                        </ul>
+                    </header>
+                </section>
+                <section class="card">
+                    <header>
+                        <h1>Database</h1>
+                        <ul>
+                            <li>Mongo DB</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </header>
+                </section>
+            </section> 
+        </section>
+        <section id="contact-me">
+            <form name="contact" id="contact" method="POST" data-netlify="true">
+                <h1>Contact Me</h1>
+                <section>
+                    <label for="firstName">First name</label>
+                    <input type="text" name="firstName" id="firstName" required />
+                </section>
+                <section>
+                    <label for="lastName">Last name</label>
+                    <input type="text" name="lastName" id="lastName" required />
+                </section>
+                <section>
+                    <label for="message">Message</label>
+                    <textarea name="massage" id="message" cols="30" rows="10"></textarea>
+                </section>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Made with ❤️ by Jatin
+    </footer>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
